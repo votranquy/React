@@ -37,7 +37,18 @@ table {
 }
 
 th, td {
-  padding: 8px;
+  padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+}
+button, [type=submit] {
+  background-color:green;
+  color:white;
+  font-weight:bold;
+  padding: 10px;
+}
+input {
+  width: 30%;
+  height:30px;
+  /* background-color:gray; */
 }
