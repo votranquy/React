@@ -13,6 +13,11 @@
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+   
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -37,5 +42,21 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+<script> 
+    $(document).ready(function() {
+      //Khi bàn phím được nhấn và thả ra thì sẽ chạy phương thức này
+      $("#formDemo").validate({
+          rules: {
+              name: "required",
+              job: "required",
+          },
+          messages: {
+              name: "Vui lòng nhập name",
+              job: "Vui lòng nhập job",
+          }
+      });
+  });
+</script>
+
   </body>
 </html>
